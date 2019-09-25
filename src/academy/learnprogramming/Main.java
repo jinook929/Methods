@@ -30,8 +30,7 @@ public class Main {
             return 2;
         } else if (highScore >= 100) {
             return 3;
-        } else {
-            return 4;
         }
+        return 4;
     }
 }
