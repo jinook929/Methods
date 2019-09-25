@@ -24,13 +24,22 @@ public class Main {
     }
 
     public static int calculateScorePosition(int highScore) {
+//        if (highScore >= 1000) {
+//            return 1;
+//        } else if (highScore >= 500) {
+//            return 2;
+//        } else if (highScore >= 100) {
+//            return 3;
+//        }
+//        return 4;
+        int position = 4;
         if (highScore >= 1000) {
-            return 1;
+            position = 1;
         } else if (highScore >= 500) {
-            return 2;
+            position = 2;
         } else if (highScore >= 100) {
-            return 3;
+            position =3;
         }
-        return 4;
+        return position;
     }
 }
